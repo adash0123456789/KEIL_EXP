@@ -1,0 +1,39 @@
+Analog to Digital Converter Example Program
+===========================================
+Project:  ADC
+
+This example project shows how to configure and use the A/D Converter
+of the following microcontrollers:
+
+   * Texas Instruments MSC1210Y2
+   * Texas Instruments MSC1210Y3
+   * Texas Instruments MSC1210Y4
+   * Texas Instruments MSC1210Y5
+
+To run this program...
+
+1. Build the project (Project - Build Target)
+2. Start the uVision Debugger
+3. Open the Serial Window (View - Serial Window 1)
+4. Open the Toolbox (View - Toolbox)
+5. Click Go or Run (F5)
+6. Click on the Toolbox buttons to change input voltages
+
+The ADC program reads all eight analog inputs of the
+MSC1200 and outputs the values along with other 
+A/D relevant information via the serial interface.
+
+This example shows a simple method to convert the A/D HEX
+values into a voltage value that is more readable.  The 
+algorithm uses only long arithmetic and avoids any loss of
+precision as it would be the case when using single precision
+floating point arithmetic.
+
+A debug script (debug.ini) creates buttons that set different 
+analog values in A/D channels.  As the program runs, you 
+will see the A/D input and output change.
+
+Other buttons create signals that generate a sine wave 
+or sawtooth patterns as analog inputs.  µVision3 users may 
+enable the built-in Logic Analyzer to view, measure and compare
+these input signals graphically.

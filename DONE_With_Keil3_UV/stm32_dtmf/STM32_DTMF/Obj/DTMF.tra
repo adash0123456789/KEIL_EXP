@@ -1,0 +1,26 @@
+*** Creating Trace Output File '.\Obj\DTMF.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\stm32f10x.o"'
+### List of Objects: adding '".\obj\stm32_init.o"'
+### List of Objects: adding '".\obj\serial.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\dtmf.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '".\obj\t1int.o"'
+### List of Objects: adding '".\obj\lcd_4bit.o"'
+### ADS-LD Command completed:
+".\obj\stm32f10x.o" ".\obj\stm32_init.o" ".\obj\serial.o" ".\obj\main.o" ".\obj\dtmf.o" ".\obj\retarget.o" ".\obj\t1int.o" ".\obj\lcd_4bit.o" --device DARMSTM --strict --scatter ".\Obj\DTMF.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\DTMF.map" -o ".\Obj\DTMF.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\Obj\DTMF.axf'
+### ADS-LD Command File: '.\Obj\DTMF.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\Obj\DTMF.lnp', Handle=0x00000280
+### Writing '.lnp' file
+### ADS-LD Command file '.\Obj\DTMF.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

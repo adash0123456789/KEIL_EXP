@@ -1,0 +1,4 @@
+".\obj\stm32f10x.o" ".\obj\stm32_init.o" ".\obj\serial.o" ".\obj\main.o" ".\obj\dtmf.o" ".\obj\retarget.o" ".\obj\t1int.o" ".\obj\lcd_4bit.o" --device DARMSTM --strict --scatter ".\Obj\DTMF.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\DTMF.map" -o ".\Obj\DTMF.axf"

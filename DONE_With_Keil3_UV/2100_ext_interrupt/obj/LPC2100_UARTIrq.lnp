@@ -1,0 +1,4 @@
+".\obj\startup.o" ".\obj\main.o" ".\obj\retarget.o" ".\obj\sio.o" ".\obj\swi.o" --device DARMP --strict --scatter ".\obj\LPC2100_UARTIrq.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lst\LPC2100_UARTIrq.map" -o ".\obj\LPC2100_UARTIrq.axf"

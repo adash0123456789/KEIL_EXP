@@ -1,0 +1,20 @@
+*** Creating Trace Output File 'TimerExample.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"timercode.o"'
+### ADS-LD Command completed:
+"startup.o" "timercode.o" --device DARMP --strict --scatter "TimerExample.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\TimerExample.map" -o "TimerExample.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'TimerExample.axf'
+### ADS-LD Command File: 'TimerExample.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'TimerExample.lnp', Handle=0x0000028C
+### Writing '.lnp' file
+### ADS-LD Command file 'TimerExample.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

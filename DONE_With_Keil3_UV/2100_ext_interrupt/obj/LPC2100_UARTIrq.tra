@@ -1,0 +1,23 @@
+*** Creating Trace Output File '.\obj\LPC2100_UARTIrq.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup.o"'
+### List of Objects: adding '".\obj\main.o"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '".\obj\sio.o"'
+### List of Objects: adding '".\obj\swi.o"'
+### ADS-LD Command completed:
+".\obj\startup.o" ".\obj\main.o" ".\obj\retarget.o" ".\obj\sio.o" ".\obj\swi.o" --device DARMP --strict --scatter ".\obj\LPC2100_UARTIrq.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lst\LPC2100_UARTIrq.map" -o ".\obj\LPC2100_UARTIrq.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\obj\LPC2100_UARTIrq.axf'
+### ADS-LD Command File: '.\obj\LPC2100_UARTIrq.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\obj\LPC2100_UARTIrq.lnp', Handle=0x0000044C
+### Writing '.lnp' file
+### ADS-LD Command file '.\obj\LPC2100_UARTIrq.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

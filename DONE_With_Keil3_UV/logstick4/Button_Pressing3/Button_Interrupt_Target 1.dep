@@ -1,0 +1,6 @@
+Dependencies for Project 'Button_Interrupt', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x43D4BD8E)(--device DARMP -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\Button_Interrupt.c)(0x45008804)(-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "button_interrupt.o" --omf_browse "button_interrupt.crf" --depend "button_interrupt.d")
+I (C:\Keil\ARM\INC\Philips\LPC21xx.H)(0x48D8675A)
+F (.\Button_Interrupt.ini)(0x44ABCEF0)()
+F (.\ReadMe.txt)(0x452A75A8)()

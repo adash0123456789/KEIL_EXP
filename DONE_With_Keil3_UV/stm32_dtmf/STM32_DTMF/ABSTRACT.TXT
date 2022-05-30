@@ -1,0 +1,21 @@
+The DTMF project implements a DTMF detection algoritm for the 
+STMicroelectronics STM32F103RB device. 
+
+The project contains three targets:
+
+- Simulator for verification in the uVision simulator
+- AutoTest for autmatic testing in the uVision simulator
+- MCBSTM32 Flash for Flash Downloading and Target test
+
+The Simulator target uses signal functions (defined in the 
+debugger init file Debugger.INI) to generate various DTMF 
+signal patterns. The signal function can be invoked with
+various parameters using the Toolbox buttons. With Code 
+Coverage you may check if all paths of DTMF algorithm
+are executed. This is useful during program verification but
+also helps to identify redundant code in a program.
+
+The AutoTest target can be invoked with the batch file AutoTest.BAT
+which starts the debug mode of uVision.  The debugger init file
+AutoTest.INI executes automatically the DTMF signal functions and
+creates a log file of the program execution.

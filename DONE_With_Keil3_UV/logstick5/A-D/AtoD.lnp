@@ -1,0 +1,4 @@
+"startup.o" "main.o" --device DARMP --strict --scatter "AtoD.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\AtoD.map" -o "AtoD.axf"

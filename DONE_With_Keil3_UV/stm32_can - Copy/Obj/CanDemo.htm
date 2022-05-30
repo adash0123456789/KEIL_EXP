@@ -1,0 +1,533 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Obj\CanDemo.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Obj\CanDemo.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT3.1 [Build 939]: Last Updated: Sun May 29 01:06:42 2022
+<BR><P>
+<H3>Maximum Stack Usage =         52 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+main &rArr; val_display &rArr; lcd_print &rArr; lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[14234c8]">NMI_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[14234c8]">NMI_Handler</a><BR>
+ <LI><a href="#[1423480]">HardFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1423480]">HardFault_Handler</a><BR>
+ <LI><a href="#[1423438]">MemManage_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1423438]">MemManage_Handler</a><BR>
+ <LI><a href="#[14233f0]">BusFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[14233f0]">BusFault_Handler</a><BR>
+ <LI><a href="#[14233a8]">UsageFault_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[14233a8]">UsageFault_Handler</a><BR>
+ <LI><a href="#[1423360]">SVC_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1423360]">SVC_Handler</a><BR>
+ <LI><a href="#[1423318]">DebugMon_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1423318]">DebugMon_Handler</a><BR>
+ <LI><a href="#[14232d0]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[14232d0]">PendSV_Handler</a><BR>
+ <LI><a href="#[1423288]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1423288]">SysTick_Handler</a><BR>
+ <LI><a href="#[1423240]">ADC_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1423240]">ADC_IRQHandler</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[1423510]">Reset_Handler</a>
+ <LI><a href="#[14234c8]">NMI_Handler</a>
+ <LI><a href="#[1423480]">HardFault_Handler</a>
+ <LI><a href="#[1423438]">MemManage_Handler</a>
+ <LI><a href="#[14233f0]">BusFault_Handler</a>
+ <LI><a href="#[14233a8]">UsageFault_Handler</a>
+ <LI><a href="#[1423360]">SVC_Handler</a>
+ <LI><a href="#[1423318]">DebugMon_Handler</a>
+ <LI><a href="#[14232d0]">PendSV_Handler</a>
+ <LI><a href="#[1423288]">SysTick_Handler</a>
+ <LI><a href="#[1422670]">WWDG_IRQHandler</a>
+ <LI><a href="#[1422c10]">PVD_IRQHandler</a>
+ <LI><a href="#[1422a60]">TAMPER_IRQHandler</a>
+ <LI><a href="#[1422b38]">RTC_IRQHandler</a>
+ <LI><a href="#[1422d78]">FLASH_IRQHandler</a>
+ <LI><a href="#[1422bc8]">RCC_IRQHandler</a>
+ <LI><a href="#[1422f70]">EXTI0_IRQHandler</a>
+ <LI><a href="#[1422ee0]">EXTI1_IRQHandler</a>
+ <LI><a href="#[1422e98]">EXTI2_IRQHandler</a>
+ <LI><a href="#[1422e50]">EXTI3_IRQHandler</a>
+ <LI><a href="#[1422e08]">EXTI4_IRQHandler</a>
+ <LI><a href="#[1423168]">DMAChannel1_IRQHandler</a>
+ <LI><a href="#[1423120]">DMAChannel2_IRQHandler</a>
+ <LI><a href="#[14230d8]">DMAChannel3_IRQHandler</a>
+ <LI><a href="#[1423090]">DMAChannel4_IRQHandler</a>
+ <LI><a href="#[1423048]">DMAChannel5_IRQHandler</a>
+ <LI><a href="#[1423000]">DMAChannel6_IRQHandler</a>
+ <LI><a href="#[1422fb8]">DMAChannel7_IRQHandler</a>
+ <LI><a href="#[1423240]">ADC_IRQHandler</a>
+ <LI><a href="#[1422700]">USB_HP_CAN_TX_IRQHandler</a>
+ <LI><a href="#[14226b8]">USB_LP_CAN_RX0_IRQHandler</a>
+ <LI><a href="#[14231f8]">CAN_RX1_IRQHandler</a>
+ <LI><a href="#[14231b0]">CAN_SCE_IRQHandler</a>
+ <LI><a href="#[1422dc0]">EXTI9_5_IRQHandler</a>
+ <LI><a href="#[1422a18]">TIM1_BRK_IRQHandler</a>
+ <LI><a href="#[1422940]">TIM1_UP_IRQHandler</a>
+ <LI><a href="#[1422988]">TIM1_TRG_COM_IRQHandler</a>
+ <LI><a href="#[14229d0]">TIM1_CC_IRQHandler</a>
+ <LI><a href="#[14228f8]">TIM2_IRQHandler</a>
+ <LI><a href="#[14228b0]">TIM3_IRQHandler</a>
+ <LI><a href="#[1422868]">TIM4_IRQHandler</a>
+ <LI><a href="#[1422ce8]">I2C1_EV_IRQHandler</a>
+ <LI><a href="#[1422d30]">I2C1_ER_IRQHandler</a>
+ <LI><a href="#[1422c58]">I2C2_EV_IRQHandler</a>
+ <LI><a href="#[1422ca0]">I2C2_ER_IRQHandler</a>
+ <LI><a href="#[1422af0]">SPI1_IRQHandler</a>
+ <LI><a href="#[1422aa8]">SPI2_IRQHandler</a>
+ <LI><a href="#[1422820]">USART1_IRQHandler</a>
+ <LI><a href="#[14227d8]">USART2_IRQHandler</a>
+ <LI><a href="#[1422790]">USART3_IRQHandler</a>
+ <LI><a href="#[1422f28]">EXTI15_10_IRQHandler</a>
+ <LI><a href="#[1422b80]">RTCAlarm_IRQHandler</a>
+ <LI><a href="#[1422748]">USBWakeUp_IRQHandler</a>
+ <LI><a href="#[1415138]">__main</a>
+ <LI><a href="#[1415900]">main</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[1415138]"></a>__main</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, entry.o($$startup$$))
+<BR><BR>[Calls]<UL><LI><a href="#[1414c40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__init
+</UL>
+
+<P><STRONG><a name="[1414c88]"></a>__call_main</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, init.o(.emb_text))
+<BR><BR>[Called By]<UL><LI><a href="#[1414c40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__init
+</UL>
+
+<P><STRONG><a name="[1423510]"></a>Reset_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14234c8]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[14234c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14234c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423480]"></a>HardFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1423480]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1423480]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423438]"></a>MemManage_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1423438]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1423438]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManage_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14233f0]"></a>BusFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[14233f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14233f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14233a8]"></a>UsageFault_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[14233a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14233a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFault_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423360]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1423360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1423360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423318]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1423318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1423318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DebugMon_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14232d0]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[14232d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[14232d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423288]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1423288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1423288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423240]"></a>ADC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1423240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1423240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14231f8]"></a>CAN_RX1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14231b0]"></a>CAN_SCE_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423168]"></a>DMAChannel1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423120]"></a>DMAChannel2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14230d8]"></a>DMAChannel3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423090]"></a>DMAChannel4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423048]"></a>DMAChannel5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1423000]"></a>DMAChannel6_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422fb8]"></a>DMAChannel7_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422f70]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422f28]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422ee0]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422e98]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422e50]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422e08]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422dc0]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422d78]"></a>FLASH_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422d30]"></a>I2C1_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422ce8]"></a>I2C1_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422ca0]"></a>I2C2_ER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422c58]"></a>I2C2_EV_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422c10]"></a>PVD_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422bc8]"></a>RCC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422b80]"></a>RTCAlarm_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422b38]"></a>RTC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422af0]"></a>SPI1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422aa8]"></a>SPI2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422a60]"></a>TAMPER_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422a18]"></a>TIM1_BRK_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14229d0]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422988]"></a>TIM1_TRG_COM_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422940]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14228f8]"></a>TIM2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14228b0]"></a>TIM3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422868]"></a>TIM4_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422820]"></a>USART1_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14227d8]"></a>USART2_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422790]"></a>USART3_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422748]"></a>USBWakeUp_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1422670]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, stm32f10x.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[141e800]"></a>stm32_Init</STRONG> (Thumb, 110 bytes, Stack size 0 bytes, stm32_init.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[141e7b8]"></a>stm32_GetPCLK1</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32_init.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[14186a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_setup
+</UL>
+
+<P><STRONG><a name="[141e770]"></a>stm32_GetPCLK2</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32_init.o(.text), UNUSED)
+
+<P><STRONG><a name="[141b3a8]"></a>lcd_write_4bit</STRONG> (Thumb, 76 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = lcd_write_4bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141c5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141b2d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[141b360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[141c518]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
+</UL>
+
+<P><STRONG><a name="[141b360]"></a>lcd_write_cmd</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141b3a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[141c560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141b240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[141b288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[141b2d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+</UL>
+
+<P><STRONG><a name="[141b318]"></a>lcd_putchar</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141c518]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141b168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_bargraphXY
+<LI><a href="#[141b1b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_bargraph
+<LI><a href="#[141b1f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
+<LI><a href="#[141b2d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+</UL>
+
+<P><STRONG><a name="[141b2d0]"></a>lcd_init</STRONG> (Thumb, 158 bytes, Stack size 12 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lcd_init &rArr; lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141b318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+<LI><a href="#[141b360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[141b3a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[141c5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[141b288]"></a>set_cursor</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = set_cursor &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141b360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1415990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;val_display
+<LI><a href="#[141b168]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_bargraphXY
+<LI><a href="#[141b240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+</UL>
+
+<P><STRONG><a name="[141b240]"></a>lcd_clear</STRONG> (Thumb, 18 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lcd_clear &rArr; set_cursor &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141b288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[141b360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[141b1f8]"></a>lcd_print</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = lcd_print &rArr; lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141b318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1415990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;val_display
+</UL>
+
+<P><STRONG><a name="[141b1b0]"></a>lcd_bargraph</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, lcd_4bit.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[141b318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+
+<P><STRONG><a name="[141b168]"></a>lcd_bargraphXY</STRONG> (Thumb, 64 bytes, Stack size 20 bytes, lcd_4bit.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[141b288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[141b318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+
+<P><STRONG><a name="[14186a0]"></a>CAN_setup</STRONG> (Thumb, 222 bytes, Stack size 8 bytes, can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CAN_setup
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141e7b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_GetPCLK1
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_Init
+</UL>
+
+<P><STRONG><a name="[1418658]"></a>CAN_start</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, can.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_Init
+</UL>
+
+<P><STRONG><a name="[1418610]"></a>CAN_testmode</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, can.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_Init
+</UL>
+
+<P><STRONG><a name="[14185c8]"></a>CAN_waitReady</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, can.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_Init
+</UL>
+
+<P><STRONG><a name="[1418580]"></a>CAN_wrMsg</STRONG> (Thumb, 202 bytes, Stack size 0 bytes, can.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1418538]"></a>CAN_rdMsg</STRONG> (Thumb, 180 bytes, Stack size 0 bytes, can.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[14226b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_LP_CAN_RX0_IRQHandler
+</UL>
+
+<P><STRONG><a name="[14184f0]"></a>CAN_wrFilter</STRONG> (Thumb, 208 bytes, Stack size 12 bytes, can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = CAN_wrFilter
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_Init
+</UL>
+
+<P><STRONG><a name="[1422700]"></a>USB_HP_CAN_TX_IRQHandler</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, can.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[14226b8]"></a>USB_LP_CAN_RX0_IRQHandler</STRONG> (Thumb, 28 bytes, Stack size 4 bytes, can.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = USB_LP_CAN_RX0_IRQHandler
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1418538]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_rdMsg
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x.o(RESET)
+</UL>
+<P><STRONG><a name="[1415ab0]"></a>Hex_Str</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, candemo.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;val_display
+</UL>
+
+<P><STRONG><a name="[1415a68]"></a>delay</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, candemo.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[1415990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;val_display
+</UL>
+
+<P><STRONG><a name="[1415a20]"></a>adc_Init</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, candemo.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[14159d8]"></a>adc_Get</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, candemo.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1415990]"></a>val_display</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, candemo.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = val_display &rArr; lcd_print &rArr; lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1415a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+<LI><a href="#[1415ab0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hex_Str
+<LI><a href="#[141b1f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
+<LI><a href="#[141b288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1415948]"></a>can_Init</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, candemo.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = can_Init &rArr; CAN_wrFilter
+</UL>
+<BR>[Calls]<UL><LI><a href="#[14184f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_wrFilter
+<LI><a href="#[14185c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_waitReady
+<LI><a href="#[1418610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_testmode
+<LI><a href="#[1418658]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_start
+<LI><a href="#[14186a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_setup
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[1415900]"></a>main</STRONG> (Thumb, 164 bytes, Stack size 8 bytes, candemo.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = main &rArr; val_display &rArr; lcd_print &rArr; lcd_putchar &rArr; lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[1415948]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_Init
+<LI><a href="#[1415990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;val_display
+<LI><a href="#[14159d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_Get
+<LI><a href="#[1415a20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_Init
+<LI><a href="#[1415a68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+<LI><a href="#[1418580]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CAN_wrMsg
+<LI><a href="#[141b1f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
+<LI><a href="#[141b240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[141b288]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[141b2d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[141e800]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;stm32_Init
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> init.o(.text)
+</UL>
+<P><STRONG><a name="[1414c40]"></a>__init</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[1414c88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__call_main
+</UL>
+<BR>[Called By]<UL><LI><a href="#[1415138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
+</UL>
+
+<P><STRONG><a name="[1414bf8]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[14146d0]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[1414688]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[1414640]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[141c5f0]"></a>delay</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, lcd_4bit.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[141b2d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[141b3a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[141c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_read_status
+</UL>
+
+<P><STRONG><a name="[141c5a8]"></a>lcd_read_status</STRONG> (Thumb, 168 bytes, Stack size 4 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141c5f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141c560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+</UL>
+
+<P><STRONG><a name="[141c560]"></a>wait_while_busy</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141c5a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_read_status
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141b360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[141c518]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_data
+</UL>
+
+<P><STRONG><a name="[141c518]"></a>lcd_write_data</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd_4bit.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = lcd_write_data &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[141b3a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[141c560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[141b318]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+<P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

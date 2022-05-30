@@ -1,0 +1,4 @@
+Dependencies for Project 'Button_Press', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x43D4BD8E)(--device DARMP -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\Simple_Press.c)(0x44A9295C)(-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "simple_press.o" --omf_browse "simple_press.crf" --depend "simple_press.d")
+I (C:\Keil\ARM\INC\Philips\LPC21xx.H)(0x48D8675A)

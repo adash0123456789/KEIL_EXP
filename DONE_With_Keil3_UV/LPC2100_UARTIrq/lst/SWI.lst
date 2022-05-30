@@ -1,0 +1,278 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000         ;/******************************************************
+                       ***********************/
+    2 00000000         ;/* SWI.S: SWI Handler                                  
+                                             */
+    3 00000000         ;/******************************************************
+                       ***********************/
+    4 00000000         ;/* This file is part of the uVision/ARM development too
+                       ls.                   */
+    5 00000000         ;/* Copyright (c) 2005-2006 Keil Software. All rights re
+                       served.               */
+    6 00000000         ;/* This software may only be used under the terms of a 
+                       valid, current,       */
+    7 00000000         ;/* end user licence from KEIL for a compatible version 
+                       of KEIL software      */
+    8 00000000         ;/* development tools. Nothing else gives you the right 
+                       to use this software. */
+    9 00000000         ;/******************************************************
+                       ***********************/
+   10 00000000         
+   11 00000000 00000020 
+                       T_Bit   EQU              0x20
+   12 00000000         
+   13 00000000                 PRESERVE8                    ; 8-Byte aligned St
+                                                            ack
+   14 00000000                 AREA             SWI_Area, CODE, READONLY
+   15 00000000                 ARM
+   16 00000000         
+   17 00000000                 EXPORT           SWI_Handler
+   18 00000000         SWI_Handler
+   19 00000000         
+   20 00000000 E92D5000        STMFD            SP!, {R12, LR} ; Store R12, LR
+   21 00000004 E14FC000        MRS              R12, SPSR   ; Get SPSR
+   22 00000008 E92D1100        STMFD            SP!, {R8, R12} ; Store R8, SPSR
+                                                            
+   23 0000000C E31C0020        TST              R12, #T_Bit ; Check Thumb Bit
+   24 00000010 115EC0B2        LDRNEH           R12, [LR,#-2] ; Thumb: Load Hal
+                                                            fword
+   25 00000014 13CCCCFF        BICNE            R12, R12, #0xFF00 ;        Extr
+                                                            act SWI Number
+   26 00000018 051EC004        LDREQ            R12, [LR,#-4] 
+                                                            ; ARM:   Load Word
+   27 0000001C 03CCC4FF        BICEQ            R12, R12, #0xFF000000 ;        
+                                                            Extract SWI Number
+   28 00000020         
+   29 00000020 E59F8024        LDR              R8, SWI_Count
+   30 00000024 E15C0008        CMP              R12, R8
+   31 00000028 2A000006        BHS              SWI_Dead    ; Overflow
+   32 0000002C E28F801C        ADR              R8, SWI_Table
+   33 00000030 E798C10C        LDR              R12, [R8,R12,LSL #2] ; Load SWI
+                                                             Function Address
+   34 00000034 E1A0E00F        MOV              LR, PC      ; Return Address
+   35 00000038 E12FFF1C        BX               R12         ; Call SWI Function
+                                                             
+   36 0000003C         
+   37 0000003C E8BD1100        LDMFD            SP!, {R8, R12} ; Load R8, SPSR
+   38 00000040 E16FF00C        MSR              SPSR_cxsf, R12 ; Set SPSR
+   39 00000044 E8FD9000        LDMFD            SP!, {R12, PC}^ ; Restore R12 a
+                                                            nd Return
+   40 00000048         
+
+
+
+ARM Macro Assembler    Page 2 
+
+
+   41 00000048 EAFFFFFE 
+                       SWI_Dead
+                               B                SWI_Dead    ; None Existing SWI
+                                                            
+   42 0000004C         
+   43 0000004C 0000000A 
+                       SWI_Cnt EQU              (SWI_End-SWI_Table)/4
+   44 0000004C 0000000A 
+                       SWI_Count
+                               DCD              SWI_Cnt
+   45 00000050         
+   46 00000050                 IMPORT           __SWI_8
+   47 00000050                 IMPORT           __SWI_9
+   48 00000050         
+   49 00000050         SWI_Table
+   50 00000050 00000000        DCD              SWI_Dead    ; SWI 0 Function En
+                                                            try
+   51 00000054 00000000        DCD              SWI_Dead    ; SWI 1 Function En
+                                                            try
+   52 00000058 00000000        DCD              SWI_Dead    ; SWI 2 Function En
+                                                            try
+   53 0000005C 00000000        DCD              SWI_Dead    ; SWI 3 Function En
+                                                            try
+   54 00000060 00000000        DCD              SWI_Dead    ; SWI 4 Function En
+                                                            try
+   55 00000064 00000000        DCD              SWI_Dead    ; SWI 5 Function En
+                                                            try
+   56 00000068 00000000        DCD              SWI_Dead    ; SWI 6 Function En
+                                                            try
+   57 0000006C 00000000        DCD              SWI_Dead    ; SWI 7 Function En
+                                                            try
+   58 00000070 00000000        DCD              __SWI_8     ; SWI 8 Function En
+                                                            try
+   59 00000074 00000000        DCD              __SWI_9     ; SWI 9 Function En
+                                                            try
+   60 00000078         ;               ...
+   61 00000078         SWI_End
+   62 00000078         
+   63 00000078         
+   64 00000078                 END
+Command Line: --debug --xref --device=DARMP --apcs=interwork -o.\obj\SWI.o -IC:
+\Keil\ARM\INC\Philips --list=.\lst\SWI.lst SWI.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+SWI_Area 00000000
+
+Symbol: SWI_Area
+   Definitions
+      At line 14 in file SWI.s
+   Uses
+      None
+Comment: SWI_Area unused
+SWI_Count 0000004C
+
+Symbol: SWI_Count
+   Definitions
+      At line 44 in file SWI.s
+   Uses
+      At line 29 in file SWI.s
+Comment: SWI_Count used once
+SWI_Dead 00000048
+
+Symbol: SWI_Dead
+   Definitions
+      At line 41 in file SWI.s
+   Uses
+      At line 31 in file SWI.s
+      At line 41 in file SWI.s
+      At line 50 in file SWI.s
+      At line 51 in file SWI.s
+      At line 52 in file SWI.s
+      At line 53 in file SWI.s
+      At line 54 in file SWI.s
+      At line 55 in file SWI.s
+      At line 56 in file SWI.s
+      At line 57 in file SWI.s
+
+SWI_End 00000078
+
+Symbol: SWI_End
+   Definitions
+      At line 61 in file SWI.s
+   Uses
+      At line 43 in file SWI.s
+Comment: SWI_End used once
+SWI_Handler 00000000
+
+Symbol: SWI_Handler
+   Definitions
+      At line 18 in file SWI.s
+   Uses
+      At line 17 in file SWI.s
+Comment: SWI_Handler used once
+SWI_Table 00000050
+
+Symbol: SWI_Table
+   Definitions
+      At line 49 in file SWI.s
+   Uses
+      At line 32 in file SWI.s
+      At line 43 in file SWI.s
+
+6 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.debug_info$$$SWI_Area 00000000
+
+Symbol: .debug_info$$$SWI_Area
+   Definitions
+      None
+   Uses
+      None
+Warning: .debug_info$$$SWI_Area undefinedComment: .debug_info$$$SWI_Area unused
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.debug_line$$$SWI_Area 00000000
+
+Symbol: .debug_line$$$SWI_Area
+   Definitions
+      None
+   Uses
+      None
+Warning: .debug_line$$$SWI_Area undefinedComment: .debug_line$$$SWI_Area unused
+1 symbol
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.debug_abbrev 00000000
+
+Symbol: .debug_abbrev
+   Definitions
+      None
+   Uses
+      None
+Warning: .debug_abbrev undefinedComment: .debug_abbrev unused
+__ARM_asm.debug_abbrev 00000000
+
+Symbol: __ARM_asm.debug_abbrev
+   Definitions
+      None
+   Uses
+      None
+Warning: __ARM_asm.debug_abbrev undefinedComment: __ARM_asm.debug_abbrev unused
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+SWI_Cnt 0000000A
+
+Symbol: SWI_Cnt
+   Definitions
+      At line 43 in file SWI.s
+   Uses
+      At line 44 in file SWI.s
+Comment: SWI_Cnt used once
+T_Bit 00000020
+
+Symbol: T_Bit
+   Definitions
+      At line 11 in file SWI.s
+   Uses
+      At line 23 in file SWI.s
+Comment: T_Bit used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+__SWI_8 00000000
+
+Symbol: __SWI_8
+   Definitions
+      At line 46 in file SWI.s
+   Uses
+      At line 58 in file SWI.s
+Comment: __SWI_8 used once
+__SWI_9 00000000
+
+Symbol: __SWI_9
+   Definitions
+      At line 47 in file SWI.s
+   Uses
+      At line 59 in file SWI.s
+Comment: __SWI_9 used once
+2 symbols
+333 symbols in table

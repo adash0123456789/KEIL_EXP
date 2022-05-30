@@ -1,0 +1,4 @@
+"startup.o" "timercode.o" --device DARMP --strict --scatter "TimerExample.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\TimerExample.map" -o "TimerExample.axf"

@@ -1,0 +1,7 @@
+Dependencies for Project 'NestInt', Target 'Simulator': (DO NOT MODIFY !)
+F (.\Startup.s)(0x468290A2)(--device DARMP -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\Intrp.c)(0x469A4AA4)(-c --device DARMP -g -O3 --apcs=interwork --asm --interleave -I "C:\Keil\ARM\INC\Philips" -o "intrp.o" --depend "intrp.d")
+I (C:\Keil\ARM\INC\Philips\LPC21xx.H)(0x48D8675A)
+F (.\nest_irq.s)(0x469A43CA)(--device DARMP -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "nest_irq.lst" --xref -o "nest_irq.o")
+F (.\Simulator.ini)(0x419B9380)()
+F (.\Abstract.txt)(0x469A3832)()

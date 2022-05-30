@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'NestInt.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup.o"'
+### List of Objects: adding '"intrp.o"'
+### List of Objects: adding '"nest_irq.o"'
+### ADS-LD Command completed:
+"startup.o" "intrp.o" "nest_irq.o" --device DARMP --strict --scatter "NestInt.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\NestInt.map" -o "NestInt.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'NestInt.axf'
+### ADS-LD Command File: 'NestInt.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'NestInt.lnp', Handle=0x000002A4
+### Writing '.lnp' file
+### ADS-LD Command file 'NestInt.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

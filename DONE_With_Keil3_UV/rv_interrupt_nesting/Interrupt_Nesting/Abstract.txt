@@ -1,0 +1,30 @@
+This examples shows nesting of classic interrupt functions on the
+MCB2100, MCB2130, or MCB2140 Board.  It uses two interrupts Timer0 
+(tc0) and external interrupt (EINT1 input assigned to GPIO 0.14 and 
+connected to INT1 push button on Keil MCB2100 when jumper INT1 is ON).
+
+The interrupt pin is configured edge sensitive. Whenever you release 
+the push button a counter is incremented that is output to the LED's 
+connected to GPIO 1.16 - 1.22. Inside the EINT function, there is a
+long delay function that is just implemented to waste CPU time.
+
+The Timer interrupt is called every 100uSec and increments the variable 
+SecondCnt every second. GPIO 1.23 outputs an one second pulse that is derived 
+from this timer interupt.
+
+The project is available configured for two targets:
+
+Simulator:  runs without hardware on uVision Simulator
+MCB2100:    runs on Keil MCB2100 (with ULINK as debugger/programmer)
+MCB2130/40: runs on Keil MCB2130/MCB2140 (with ULINK as debugger/programmer)
+
+Under Simulation you may use the Logic Analyzer to review the operation
+of the program. A debug function generates 100ms interrupt pulses at 
+debugger startup.
+
+You may manually generate interrupts by changing the state of GPIO 0.14
+under Peripherals - GPIO - Port 0
+
+A simulator script provides a signal function that generates input
+pulses on GPIO PORT0.14. This signal function may be triggered from
+buttons in the Toolbox (opens with View - Toolbox).

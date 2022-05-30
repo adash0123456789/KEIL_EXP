@@ -1,0 +1,5 @@
+Dependencies for Project 'AtoD', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x43D4AF7E)(--device DARMP -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\main.c)(0x455DD6A4)(-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "main.o" --omf_browse "main.crf" --depend "main.d")
+I (C:\Keil\ARM\INC\Philips\LPC214x.h)(0x48D8675A)
+F (.\ReadMe.txt)(0x455DD9E0)()

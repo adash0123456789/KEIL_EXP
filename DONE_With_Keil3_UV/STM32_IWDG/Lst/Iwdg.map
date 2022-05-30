@@ -1,0 +1,226 @@
+ARM Linker, RVCT3.1 [Build 939] for uVision [Standard]
+
+================================================================================
+
+Section Cross References
+
+    stm32f10x.o(RESET) refers to stm32f10x.o(STACK) for __initial_sp
+    stm32f10x.o(RESET) refers to stm32f10x.o(.text) for Reset_Handler
+    stm32f10x.o(.text) refers to entry.o($$startup$$) for __main
+    iwdg.o(.text) refers to stm32_init.o(.text) for stm32_Init
+    iwdg.o(.text) refers to iwdg.o(.data) for ledPosIwdg
+    entry.o($$startup$$) refers to init.o(.text) for __init
+    entry.o($$startup$$) refers to stm32f10x.o(STACK) for __initial_sp
+    entry.o(__vectab_stack_and_reset_area) refers to stm32f10x.o(STACK) for __initial_sp
+    entry.o(__vectab_stack_and_reset_area) refers to entry.o($$startup$$) for __main
+    init.o(.text) refers to init.o(.emb_text) for __call_main
+    init.o(.text) refers to iwdg.o(.text) for main
+
+
+================================================================================
+
+Removing Unused input sections from the image.
+
+    Removing stm32f10x.o(HEAP), (0 bytes).
+
+1 unused section(s) (total 0 bytes) removed from the image.
+
+================================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../../microlib/init/entry.s              0x00000000   Number         0  entry.o ABSOLUTE
+    ../../microlib/init/handlers.c           0x00000000   Number         0  handlers.o ABSOLUTE
+    ../../microlib/init/init.c               0x00000000   Number         0  init.o ABSOLUTE
+    Iwdg.c                                   0x00000000   Number         0  iwdg.o ABSOLUTE
+    STM32F10x.s                              0x00000000   Number         0  stm32f10x.o ABSOLUTE
+    STM32_Init.c                             0x00000000   Number         0  stm32_init.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    RESET                                    0x08000000   Section      236  stm32f10x.o(RESET)
+    $$startup$$                              0x080000ec   Section       12  entry.o($$startup$$)
+    .emb_text                                0x080000f8   Section        2  init.o(.emb_text)
+    .text                                    0x080000fc   Section       28  stm32f10x.o(.text)
+    .text                                    0x08000118   Section      192  stm32_init.o(.text)
+    .text                                    0x080001d8   Section      136  iwdg.o(.text)
+    .text                                    0x08000260   Section       44  init.o(.text)
+    i.__scatterload_copy                     0x0800028c   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x0800029a   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x0800029c   Section       14  handlers.o(i.__scatterload_zeroinit)
+    .data                                    0x20000000   Section        8  iwdg.o(.data)
+    STACK                                    0x20000008   Section      512  stm32f10x.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$M$P$D$K$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __ARM_use_no_argv                        0x00000000   Number         0  iwdg.o ABSOLUTE
+    __decompress                              - Undefined Weak Reference
+    __Vectors                                0x08000000   Data           4  stm32f10x.o(RESET)
+    __main                                   0x080000ed   Thumb Code     8  entry.o($$startup$$)
+    __call_main                              0x080000f9   Thumb Code     2  init.o(.emb_text)
+    Reset_Handler                            0x080000fd   Thumb Code     4  stm32f10x.o(.text)
+    NMI_Handler                              0x08000101   Thumb Code     2  stm32f10x.o(.text)
+    HardFault_Handler                        0x08000103   Thumb Code     2  stm32f10x.o(.text)
+    MemManage_Handler                        0x08000105   Thumb Code     2  stm32f10x.o(.text)
+    BusFault_Handler                         0x08000107   Thumb Code     2  stm32f10x.o(.text)
+    UsageFault_Handler                       0x08000109   Thumb Code     2  stm32f10x.o(.text)
+    SVC_Handler                              0x0800010b   Thumb Code     2  stm32f10x.o(.text)
+    DebugMon_Handler                         0x0800010d   Thumb Code     2  stm32f10x.o(.text)
+    PendSV_Handler                           0x0800010f   Thumb Code     2  stm32f10x.o(.text)
+    SysTick_Handler                          0x08000111   Thumb Code     2  stm32f10x.o(.text)
+    ADC_IRQHandler                           0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    CAN_RX1_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    CAN_SCE_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    DMAChannel1_IRQHandler                   0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    DMAChannel2_IRQHandler                   0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    DMAChannel3_IRQHandler                   0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    DMAChannel4_IRQHandler                   0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    DMAChannel5_IRQHandler                   0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    DMAChannel6_IRQHandler                   0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    DMAChannel7_IRQHandler                   0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    EXTI0_IRQHandler                         0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    EXTI15_10_IRQHandler                     0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    EXTI1_IRQHandler                         0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    EXTI2_IRQHandler                         0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    EXTI3_IRQHandler                         0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    EXTI4_IRQHandler                         0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    EXTI9_5_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    FLASH_IRQHandler                         0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    I2C1_ER_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    I2C1_EV_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    I2C2_ER_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    I2C2_EV_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    PVD_IRQHandler                           0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    RCC_IRQHandler                           0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    RTCAlarm_IRQHandler                      0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    RTC_IRQHandler                           0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    SPI1_IRQHandler                          0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    SPI2_IRQHandler                          0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    TAMPER_IRQHandler                        0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    TIM1_BRK_IRQHandler                      0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    TIM1_CC_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    TIM1_TRG_COM_IRQHandler                  0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    TIM1_UP_IRQHandler                       0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    TIM2_IRQHandler                          0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    TIM3_IRQHandler                          0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    TIM4_IRQHandler                          0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    USART1_IRQHandler                        0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    USART2_IRQHandler                        0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    USART3_IRQHandler                        0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    USBWakeUp_IRQHandler                     0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    USB_HP_CAN_TX_IRQHandler                 0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    USB_LP_CAN_RX0_IRQHandler                0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    WWDG_IRQHandler                          0x08000113   Thumb Code     0  stm32f10x.o(.text)
+    stm32_Init                               0x08000119   Thumb Code   148  stm32_init.o(.text)
+    stm32_GetPCLK1                           0x080001ad   Thumb Code     4  stm32_init.o(.text)
+    stm32_GetPCLK2                           0x080001b1   Thumb Code     4  stm32_init.o(.text)
+    delay                                    0x080001d9   Thumb Code    10  iwdg.o(.text)
+    main                                     0x080001e3   Thumb Code   102  iwdg.o(.text)
+    __init                                   0x08000261   Thumb Code    30  init.o(.text)
+    __scatterload_rt2                        0x08000261   Thumb Code     0  init.o(.text)
+    __scatterload_copy                       0x0800028d   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x0800029b   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x0800029d   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    Region$$Table$$Base                      0x080002ac   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080002cc   Number         0  anon$$obj.o(Region$$Table)
+    ledPosIwdg                               0x20000000   Data           4  iwdg.o(.data)
+    ledPosEnd                                0x20000004   Data           4  iwdg.o(.data)
+    __initial_sp                             0x20000208   Number         0  stm32f10x.o(STACK)
+
+
+================================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x080000ed
+
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000002d4, Max: 0x00020000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x000002cc, Max: 0x00020000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x000000ec   Data   RO            3    RESET               stm32f10x.o
+    0x080000ec   0x0000000c   Code   RO          127  * $$startup$$         entry.o(mc_w.l)
+    0x080000f8   0x00000002   Code   RO          133    .emb_text           init.o(mc_w.l)
+    0x080000fa   0x00000002   PAD
+    0x080000fc   0x0000001c   Code   RO            4    .text               stm32f10x.o
+    0x08000118   0x000000c0   Code   RO           11    .text               stm32_init.o
+    0x080001d8   0x00000088   Code   RO          111    .text               iwdg.o
+    0x08000260   0x0000002c   Code   RO          132    .text               init.o(mc_w.l)
+    0x0800028c   0x0000000e   Code   RO          137    i.__scatterload_copy  handlers.o(mc_w.l)
+    0x0800029a   0x00000002   Code   RO          139    i.__scatterload_null  handlers.o(mc_w.l)
+    0x0800029c   0x0000000e   Code   RO          138    i.__scatterload_zeroinit  handlers.o(mc_w.l)
+    0x080002aa   0x00000002   PAD
+    0x080002ac   0x00000020   Data   RO          136    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x00000208, Max: 0x00005000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000008   Data   RW          112    .data               iwdg.o
+    0x20000008   0x00000200   Zero   RW            1    STACK               stm32f10x.o
+
+
+================================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       136         24          0          8          0        590   iwdg.o
+       192         36          0          0          0       2139   stm32_init.o
+        28          4        236          0        512        726   stm32f10x.o
+
+    ------------------------------------------------------------------------
+       356         64        268          8        512       3456   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+         0          0          0          0          0          1   (incl. Padding)
+
+    ------------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+        12          4          0          0          0          0   entry.o
+        30          0          0          0          0          0   handlers.o
+        46         14          0          0          0          0   init.o
+
+    ------------------------------------------------------------------------
+        92         18          0          0          0          0   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
+
+    ------------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+        88         18          0          0          0          0   mc_w.l
+
+    ------------------------------------------------------------------------
+        92         18          0          0          0          0   Library Totals
+
+    ------------------------------------------------------------------------
+
+================================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+       448         82        268          8        512       3456   Grand Totals
+       448         82        268          8        512       3456   ELF Image Totals
+       448         82        268          8          0          0   ROM Totals
+
+================================================================================
+
+    Total RO  Size (Code + RO Data)                  716 (   0.70kB)
+    Total RW  Size (RW Data + ZI Data)               520 (   0.51kB)
+    Total ROM Size (Code + RO Data + RW Data)        724 (   0.71kB)
+
+================================================================================
+

@@ -1,0 +1,4 @@
+".\obj\stm32f10x.o" ".\obj\stm32_init.o" ".\obj\iwdg.o" --library_type=microlib --device DARMSTM --strict --scatter ".\Obj\Iwdg.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Iwdg.map" -o ".\Obj\Iwdg.axf"

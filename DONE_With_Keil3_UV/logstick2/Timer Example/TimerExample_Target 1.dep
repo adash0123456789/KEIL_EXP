@@ -1,0 +1,5 @@
+Dependencies for Project 'TimerExample', Target 'Target 1': (DO NOT MODIFY !)
+F (.\Startup.s)(0x43D4BD8E)(--device DARMP -g --apcs=interwork -I "C:\Keil\ARM\INC\Philips" --list "Startup.lst" --xref -o "Startup.o")
+F (.\TimerCode.c)(0x44ABE882)(-c --device DARMP -g -O0 --apcs=interwork -I "C:\Keil\ARM\INC\Philips" -o "timercode.o" --omf_browse "timercode.crf" --depend "timercode.d")
+I (C:\Keil\ARM\INC\Philips\LPC21xx.H)(0x48D8675A)
+F (.\ReadMe.txt)(0x44BD066C)()

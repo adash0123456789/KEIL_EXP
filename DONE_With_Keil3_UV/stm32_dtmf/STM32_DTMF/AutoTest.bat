@@ -1,0 +1,1 @@
+C:\Keil\UV3\UV3 -d DTMF.UV2 -tAutoTest

@@ -1,0 +1,4 @@
+".\obj\stm32f10x.o" ".\obj\stm32_init.o" ".\obj\rtc.o" --library_type=microlib --device DARMSTM --strict --scatter ".\Obj\Rtc.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Rtc.map" -o ".\Obj\Rtc.axf"

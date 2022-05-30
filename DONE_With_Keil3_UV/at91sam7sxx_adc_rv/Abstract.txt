@@ -1,0 +1,35 @@
+Analog to Digital Converter Example Program
+===========================================
+Project: ADC
+Author:  E. Healy
+
+This example program shows how to configure and use the
+A/D Converter of the following microcontrollers:
+
+* Atmel AT91SAM7S32
+* Atmel AT91SAM7S64
+* Atmel AT91SAM7S128
+* Atmel AT91SAM7S256
+
+After configuring the A/D Converter, the program reads
+A/D channel 0 and outputs the converted value using the serial 
+port.
+
+To run this program...
+
+1. Select the device (Options for Target - Device)
+2. Build the project (Project - Build Target)
+3. Start the uVision Debugger
+4. Click the Serial #1 tab
+5. Click Go or Run (F5)
+6. Click on the Toolbox buttons to change input voltages
+
+
+A debug script (debug.ini) creates buttons that set different 
+analog values in A/D channels.  As the program runs, you 
+will see the A/D input and output change.
+
+Other buttons create signals that generate sine wave 
+or sawtooth patterns as analog inputs.  µVision3 users may 
+enable the built-in Logic Analyzer to view, measure and compare
+these input signals graphically.

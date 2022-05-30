@@ -1,0 +1,4 @@
+"startup.o" "intrp.o" "nest_irq.o" --device DARMP --strict --scatter "NestInt.sct" 
+--autoat --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\NestInt.map" -o "NestInt.axf"

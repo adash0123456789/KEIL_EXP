@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre>
+<h1>µVision3 Build Log</h1>
+<h2>Project:</h2>
+C:\Users\aj\Desktop\DONE\logstick5\A-D\AtoD.uv2
+Project File Date:  11/17/2006
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling Startup.s...
+compiling main.c...
+linking...
+Program Size: Code=1264 RO-data=32 RW-data=4 ZI-data=1260  
+"AtoD.axf" - 0 Error(s), 0 Warning(s).
